@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SFPixelateRegular';
+}
+
+
+body{
+    padding: 40px;
+    background-image: url("https://images2.alphacoders.com/788/788976.jpg");
+    background-size:cover ;
+}
+
+#title-div{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background: #e8e8e8;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, .50);  
+  backdrop-filter: blur(5px);
+  border-radius: 5%;
+  max-width: 600px;
+}
+
+#title , #description{
+    text-align: center;
+    font-family: 'SFPixelateRegular';
+}
+
+
+.cuadricula{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#survey-form{
+    background: #e8e8e8;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, .50);  
+    backdrop-filter: blur(5px);
+    border-radius: 3%;
+    max-width: 600px;
+}
+
+#name,#email,#numero,#dropdown,#textarea{
+    width:100%;
+}
+
+.input-group,p,.text-area, .radio, .checkbox, .boton-envio{
+  margin: 15px;
+}
+
+button {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+   
+}
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+   transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+   transform: translateY(0);
+  }
+
+
+
+
+
+
+
+  /* .input-group {
+    position: relative;
+  } */
+  
+  .input {
+    border: 3px solid #000;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+    width: 100%;
+  }
+  
+  /* .user-label {
+    position: absolute;
+    left: 15px;
+    color: #000;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 350ms;
+  } */
+  
+  .input:focus,
+  input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+  
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+
+  
+  /* .input:focus~label,
+  input:valid~.user-label {
+    transform: translateY(235%) scale(1);
+    background-color: #e8e8e8;
+    padding: 0 .2em;
+    color: #2196f3;
+  } */
+
+
+  div.boton-envio{
+    text-align: center;
+  }
+
+
+/* desktop*/
+@media screen and (max-width: 1200px){
+  
+}
+
+/* laptop*/
+@media screen and (max-width: 1023px) and (min-width: 769px){
+  
+}
+
+
+/* Tablet*/
+@media screen and (max-width: 768px) and (min-width: 481px){
+ 
+
+  .cuadricula{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+}
+
+/* mobile */
+@media screen and (max-width: 480px) and (min-width: 300px){
+  #title-div{
+    padding: 10px;
+  }
+
+  #title{
+    font-size: 18px;
+  }
+  #description{
+    font-size: 14px ;
+  }
+
+  #survey-form{
+    padding: 10px;
+  }
+}
+
+
+  

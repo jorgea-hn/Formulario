@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixelated" type="text/css"/>
+</head>
+
+<body>
+    <div id="title-div">
+            <h1 id="title">La gran encuesta anime</h1>
+            <p id="description">Esta encuesta va para el pueblo otaku</p>  
+    </div>
+        
+    <div class="cuadricula">
+        <form action="" id="survey-form">
+
+
+            <div class="input-group">
+                <input class="input" id="name" autocomplete="off" name="text" type="text" required="" placeholder="Naruto Uzumaki">
+                <label  for="name"  id="name-label" class="user-label">Nombre</label>
+            </div>
+
+            <div class="input-group">
+                <input class="input" id="email" autocomplete="off" name="text" type="email" required="" placeholder="tuhokage@konoha.com">
+                <label id="email-label" class="user-label">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input class="input" id="number" autocomplete="off" name="text" type="number" min="0000000" max="9999999"required="" placeholder="300202020">
+                <label id="number-label" class="user-label" for="email">Numero</label>
+            </div>
+
+    
+            <div>
+                <p><b>¿Vez anime en emision?</b></p>
+                <div class="input-group">
+                    <select class="input" name="" id="dropdown">
+                        <option value="">Si</option>
+                        <option value="">No</option>
+                        <option value="">Aveces</option>
+                        <option value="">Nunca</option>
+                    </select>
+                </div>  
+            </div>
+            
+
+
+            <div class="radio">
+                <p><b> ¿Que genero te gusta?</b></p>
+                <input type="radio" id="gore" name="fav_language" value="gore">
+                <label for="gore">Gore</label><br>
+                <input type="radio" id="hentai" name="fav_language" value="hentai">
+                <label for="hentai">Hentai</label><br>
+                <input type="radio" id="echii" name="fav_language" value="echii">
+                <label for="echii">Echii</label><br>
+                <input type="radio" id="shonen" name="fav_language" value="shonen">
+                <label for="shonen">Shonen</label><br>
+            </div>
+
+            <div class="checkbox">
+                <p><b> ¿Cual de los siguientes estudos de animacion conoces?</b></p>
+                <input type="checkbox" id="madhouse" name="madhuse" value="madhouse">
+                <label for="madhouse">Mad house</label><br>
+                <input type="checkbox" id="tvtokio" name="tvtokio" value="tvtokio">
+                <label for="tvtokio">Tv tokio</label><br>
+                <input type="checkbox" id="madhouse" name="madhuse" value="madhouse">
+                <label for="madhouse">Mad house</label><br>
+                <input type="checkbox" id="madhouse" name="madhuse" value="madhouse">
+                <label for="madhouse">Mad house</label><br>
+            </div>
+                
+            <div class="text-area">
+                <p><b>Menciona los animes que recuerdes haber visto</b></p>
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="boton-envio">
+                <button id="submit"><span class="button_top">Enviar</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
